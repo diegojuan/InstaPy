@@ -106,7 +106,7 @@ xpath["get_links_for_location"] = {
     "main_elem": "//main/article/div[2]",
 }
 
-xpath["get_links_from_feed"] = {"get_links": "//article/div[3]/div[2]/a"}
+xpath["get_links_from_feed"] = {"get_links": "//article/div[2]/div[2]/a"}
 
 xpath["get_links_for_tag"] = {
     "top_elements": "//main/article/div[1]",
@@ -142,10 +142,9 @@ xpath["like_comment"] = {
 }
 
 xpath["like_image"] = {
-    "like": "//section/span/button/div[*[local-name()='svg']/@aria-label='Like']",
-    "unlike": "//section/span/button/div[*[local-name()='svg']/@aria-label='Unlike']",
+    "like": "//section/span/button/div/span[*[local-name()='svg']/@aria-label='Like']",
+    "unlike": "//section/span/button/div/span[*[local-name()='svg']/@aria-label='Unlike']",
 }
-
 xpath["like_from_image"] = {
     "main_article": "//main//article//div//div[1]//div[1]//a[1]"
 }
@@ -155,7 +154,6 @@ xpath["login_user"] = {
     "input_username_XP": "//input[@name='username']",
     "login_elem": "//button[text()='Log In']",
     "login_elem_no_such_exception": "//a[text()='Log in']",
-    "login_elem_no_such_exception_2": "//div[text()='Log In']",
     "nav": "//nav",
     "website_status": "//span[@id='status']",
     "response_time": "//span[@id='response']",
@@ -166,9 +164,7 @@ xpath["login_user"] = {
     "error_alert": "//p[@id='slfErrorAlert']",
 }
 
-xpath["open_comment_section"] = {
-    "comment_elem": "//button/div[*[local-name()='svg']/@aria-label='Comment']"
-}
+xpath["open_comment_section"] = { "comment_elem": "/html/body/div[1]/section/main/div/div/article/div[3]/section[1]/span[2]/button" }
 
 xpath["unfollow"] = {
     "following_link": "//ul/li[3]/a/span",
